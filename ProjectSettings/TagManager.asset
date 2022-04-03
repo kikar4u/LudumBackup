@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Hot
   - Destination
+  - Gourmet
   layers:
   - Default
   - TransparentFX
@@ -16,7 +17,7 @@ TagManager:
   - Ground
   - Plaque
   - Food
-  - 
+  - Player
   - 
   - 
   - 
