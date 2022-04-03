@@ -11,7 +11,7 @@ public class AtelierBehaviours : MonoBehaviour
     [Min(0.2f)]
     public float m_CookingTime;
     protected Timer t_CookingTimer;
-
+    public GameObject feedBackTimer;
     public FMODUnity.EventReference atelierSound;
     protected FMOD.Studio.EventInstance atelierEvent;
 
