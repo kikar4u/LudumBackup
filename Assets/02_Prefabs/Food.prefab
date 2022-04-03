@@ -121,8 +121,11 @@ MonoBehaviour:
     m_Bits: 128
   m_FastCookTime: 3
   m_MediumCookTime: 0.2
-  m_CookIndicator: {fileID: 0}
-  m_CookColor: []
+  m_CookIndicator: {fileID: 2974187320000650016}
+  m_CookColor:
+  - {r: 0, g: 0.11251116, b: 1, a: 1}
+  - {r: 0.3800627, g: 1, b: 0, a: 1}
+  - {r: 1, g: 0, b: 0, a: 1}
 --- !u!54 &1599036350
 Rigidbody:
   m_ObjectHideFlags: 0
