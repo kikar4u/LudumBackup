@@ -48,7 +48,7 @@ public class ShootLogics : MonoBehaviour
         {
             if (!t_CanShootTimer.IsStarted())
             {
-                print("dezqss");
+                //print("dezqss");
                 t_CanShootTimer.ResetPlay();
             }
             return;
@@ -64,7 +64,7 @@ public class ShootLogics : MonoBehaviour
         }
         if (!t_CanShootTimer.IsStarted())
         {
-            print("dezqss");
+            //print("dezqss");
             t_CanShootTimer.ResetPlay();
         }
             
@@ -72,10 +72,26 @@ public class ShootLogics : MonoBehaviour
 
     public void Shoot(Food_Behaviours food)
     {
-        print(food.name + " name");
-            //food.MoveToTheGourmet(GourmetBehaviours.instance.transform.position);
-            GetComponent<PropulsionPad>().HandleTrigger(food.gameObject, food.gameObject.GetComponent<SphereCollider>().bounds);
-        //food.Shoot(transform.parent.position,m_ShootForce);
+       // print(food.name + " name");
+        RaycastHit hit;
+            //Debug.DrawRay(gameObject.transform.position, transform.TransformDirection(Vector3.forward) * 10000f, Color.yellow, 1000f);
+            if(Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, Mathf.Infinity))
+            {
+                if(hit.transform.gameObject.tag == "Gourmet")
+                {
+                    Debug.DrawRay(gameObject.transform.position, transform.TransformDirection(Vector3.forward) * 10000f, Color.red, 1000f);
+                    GetComponent<PropulsionPad>().HandleTrigger(food.gameObject, food.gameObject.GetComponent<SphereCollider>().bounds);
+                    Debug.Log("touchey");
+                }
+
+            }
+            else
+            {
+                Debug.Log("no touchey");
+                //food.MoveToTheGourmet(GourmetBehaviours.instance.transform.position);
+                food.Shoot(transform.parent.position, m_ShootForce);
+            }
+
     }
 
 
