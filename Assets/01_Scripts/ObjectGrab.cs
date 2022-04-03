@@ -6,21 +6,23 @@ public class ObjectGrab : MonoBehaviour
 {
     [SerializeField]
     private Transform Destination;
-    public LayerMask m_FoodLayer;
+    public LayerMask m_player;
     public KeyCode m_ShootInput;
     private bool isOnHead = false;
+    public Collider[] hit;
 
     public void Update()
     {
         var playerPosition = GameObject.FindGameObjectWithTag("Player").transform.position;
         var objectPosition = this.transform.position;
-        Collider[] hit = Physics.OverlapSphere(transform.position, 2f, m_FoodLayer);
+        hit = Physics.OverlapSphere(transform.position, 2f, m_player);
         /*
                 if (objectPosition.x - playerPosition.x <= 3 && objectPosition.x - playerPosition.x >= -3
                     && objectPosition.z - playerPosition.z <= 3 && objectPosition.z - playerPosition.z >= -3)
                 {*//*        }*/
-        if (Input.GetKey(m_ShootInput))
+        if (Input.GetKeyDown(m_ShootInput) && hit.Length >= 1 && !isOnHead)
         {
+            Debug.Log(hit[0].gameObject);
             Destination = GameObject.FindGameObjectWithTag("Destination").transform;
             GetComponent<SphereCollider>().isTrigger = true;
             GetComponent<Rigidbody>().isKinematic = true;
@@ -28,7 +30,7 @@ public class ObjectGrab : MonoBehaviour
             this.transform.position = Destination.position;
             isOnHead = true;
         }
-        if (Input.GetKey(m_ShootInput) && isOnHead)
+        else if(Input.GetKeyDown(m_ShootInput) && isOnHead)
         {
             this.transform.parent = null;
             GetComponent<Rigidbody>().isKinematic = false;
