@@ -25,8 +25,9 @@ public class AtelierBehaviours : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
-            DropFood(FindObjectsOfType<Food_Behaviours>());
+/*        Debug action
+ *        if (Input.GetKeyDown(KeyCode.Escape))
+            DropFood(FindObjectsOfType<Food_Behaviours>());*/
     }
 
     public virtual void DropFood(Food_Behaviours[] foods)

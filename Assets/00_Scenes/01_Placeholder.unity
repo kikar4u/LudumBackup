@@ -192,6 +192,63 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 365a073cd6ddd8945a99aa4cc0020d90, type: 3}
+--- !u!1001 &239930786
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8769791072278860966, guid: 0bd83ddb654a9ce4ea5fb8bbc06d458e, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8769791072278860966, guid: 0bd83ddb654a9ce4ea5fb8bbc06d458e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8769791072278860966, guid: 0bd83ddb654a9ce4ea5fb8bbc06d458e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.84
+      objectReference: {fileID: 0}
+    - target: {fileID: 8769791072278860966, guid: 0bd83ddb654a9ce4ea5fb8bbc06d458e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.978609
+      objectReference: {fileID: 0}
+    - target: {fileID: 8769791072278860966, guid: 0bd83ddb654a9ce4ea5fb8bbc06d458e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8769791072278860966, guid: 0bd83ddb654a9ce4ea5fb8bbc06d458e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8769791072278860966, guid: 0bd83ddb654a9ce4ea5fb8bbc06d458e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8769791072278860966, guid: 0bd83ddb654a9ce4ea5fb8bbc06d458e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8769791072278860966, guid: 0bd83ddb654a9ce4ea5fb8bbc06d458e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8769791072278860966, guid: 0bd83ddb654a9ce4ea5fb8bbc06d458e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8769791072278860966, guid: 0bd83ddb654a9ce4ea5fb8bbc06d458e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8769791072278861017, guid: 0bd83ddb654a9ce4ea5fb8bbc06d458e, type: 3}
+      propertyPath: m_Name
+      value: Food (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0bd83ddb654a9ce4ea5fb8bbc06d458e, type: 3}
 --- !u!1 &312140234
 GameObject:
   m_ObjectHideFlags: 0
@@ -365,6 +422,41 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ab1642b7469d4e43ba9168f71b9e507, type: 3}
+--- !u!1 &493069022 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2923945621401256810, guid: 365a073cd6ddd8945a99aa4cc0020d90, type: 3}
+  m_PrefabInstance: {fileID: 56643123}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &493069024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 493069022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6e796a34b1d9a544a18c95c214b6758, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_food:
+    serializedVersion: 2
+    m_Bits: 256
+  hitFood: []
+  hit: []
+--- !u!65 &493069025
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 493069022}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &755850146
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -378,7 +470,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8769791072278860966, guid: 0bd83ddb654a9ce4ea5fb8bbc06d458e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.72
+      value: 1.72
       objectReference: {fileID: 0}
     - target: {fileID: 8769791072278860966, guid: 0bd83ddb654a9ce4ea5fb8bbc06d458e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -704,7 +796,7 @@ GameObject:
   - component: {fileID: 5424429201043212318}
   m_Layer: 0
   m_Name: Planche
-  m_TagString: Untagged
+  m_TagString: tools
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -742,9 +834,11 @@ GameObject:
   - component: {fileID: 3044518489821593301}
   - component: {fileID: 5330476815358402013}
   - component: {fileID: 5424942274428343730}
+  - component: {fileID: 5424942274428343731}
+  - component: {fileID: 5424942274428343732}
   m_Layer: 0
   m_Name: Poele
-  m_TagString: Untagged
+  m_TagString: tools
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -770,6 +864,33 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+--- !u!65 &5424942274428343731
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5424942274428343729}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.6847842, y: 4.056653, z: 4.6319766}
+  m_Center: {x: -0.28348324, y: 2.0283265, z: -0.21129}
+--- !u!64 &5424942274428343732
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5424942274428343729}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -568130952878096601, guid: 4229c12500fdeaa4aa115fabefb1046b, type: 3}
 --- !u!4 &5515755305478893937
 Transform:
   m_ObjectHideFlags: 0
@@ -996,7 +1117,7 @@ GameObject:
   - component: {fileID: 8435242194067977235}
   m_Layer: 0
   m_Name: Marmite
-  m_TagString: Untagged
+  m_TagString: tools
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

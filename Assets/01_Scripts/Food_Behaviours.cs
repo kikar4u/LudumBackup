@@ -43,6 +43,7 @@ public class Food_Behaviours : MonoBehaviour
 
         foodCookEvent = FMODUnity.RuntimeManager.CreateInstance(foodCookSound);
         FMODUnity.RuntimeManager.AttachInstanceToGameObject(foodCookEvent, transform);
+        
     }
 
     // Update is called once per frame
