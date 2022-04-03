@@ -17,5 +17,6 @@ public class Atelier_Marmite_Behaviours : AtelierBehaviours
         {
             item.foodStatus = Status.BOILED;
         }
+        atelierEvent.start();
     }
 }

@@ -17,5 +17,6 @@ public class Atelier_Poele_Behaviours : AtelierBehaviours
         {
             item.foodStatus = Status.FRY;
         }
+        atelierEvent.start();
     }
 }

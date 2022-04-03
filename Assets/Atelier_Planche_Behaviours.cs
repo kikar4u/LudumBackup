@@ -17,5 +17,6 @@ public class Atelier_Planche_Behaviours : AtelierBehaviours
         {
             item.foodStatus = Status.CUT;
         }
+        atelierEvent.start();
     }
 }
