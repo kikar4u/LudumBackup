@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Material
-  m_Shader: {fileID: -6465566751694194690, guid: a8620047d32b9c84e86f34e6c433a4bb, type: 3}
+  m_Name: SOUP
+  m_Shader: {fileID: -6465566751694194690, guid: 00b6fcd2f17a501479ca21a4b53c0715, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -76,8 +76,20 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - Vector1_0c6c403b5914429797f853e17ba3eef4: -0.09
+    - Vector1_1: 0.04
+    - Vector1_18b30d2b919b4e41a9d5882b6ec41419: 42.94
+    - Vector1_2: 0.76
+    - Vector1_25f57e66dc2a4524aaa22be9841409e3: 0.06
+    - Vector1_3: 0.71
+    - Vector1_4: 1
+    - Vector1_422d639b916e463daba849bf8bf98a95: 0.04
+    - Vector1_5947af62466546d9b8e48e18091c8610: 0.75
+    - Vector1_6241d79f71984203a6ea4d6a2279fde6: 0.48
+    - Vector1_b5962b428eac4e3391cda64a515abef5: 1.03
+    - Vector1_b9aabd9b86de4d9ab668c2f4f6ef3e96: 0.24
+    - Vector1_c6a73a4842954b96a98494d0e5c558b1: 10.53
     - _AlphaClip: 0
-    - _AmbientStrength: 0.8
     - _Blend: 0
     - _BumpScale: 1
     - _ClearCoatMask: 0
@@ -88,37 +100,34 @@ Material:
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _EnvironmentReflections: 1
-    - _FalloffAmount: 0.05
-    - _FresnelSize: 0.1
-    - _GlossMapScale: 1
+    - _GlossMapScale: 0
     - _Glossiness: 0
-    - _GlossyReflections: 1
-    - _LightingCutoff: 0
+    - _GlossyReflections: 0
     - _Metallic: 0
-    - _Mode: 0
     - _OcclusionStrength: 1
-    - _Parallax: 0.02
-    - _QueueControl: 0
+    - _Parallax: 0.005
     - _QueueOffset: 0
     - _ReceiveShadows: 1
-    - _Smoothness: 100.89
+    - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _Surface: 0
-    - _UVSec: 0
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 0.23517925, g: 0.06435263, b: 0.021215428, a: 1}
-    - _Color: {r: 0.23517925, g: 0.06435263, b: 0.021215428, a: 1}
-    - _DiffuseColor: {r: 0.254717, g: 0.15958484, b: 0.046858322, a: 1}
+    - Color_19100cc062be48b2bd7f8bed419f6adb: {r: 0.8207547, g: 0.51775545, b: 0, a: 0}
+    - Color_79b27912c33747ddb56b6ce9ff455925: {r: 0.735849, g: 0.31102413, b: 0, a: 0}
+    - Color_c17cff21ab4f4d899c87d8b0cfad48da: {r: 0, g: 0.21920675, b: 1, a: 0}
+    - Color_f62bd3f291594d008e4c2ba5f1ea5112: {r: 1, g: 0.32861227, b: 0, a: 0}
+    - Color_f62bd3f291594d008e4c2ba5f1ea5112_1: {r: 0.9245283, g: 0.44012088, b: 0, a: 1}
+    - Color_fd1d456991a3487192a68d438cba9994: {r: 1, g: 1, b: 1, a: 0}
+    - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _FresnelColor: {r: 0.4339623, g: 0.33766693, b: 0.30909577, a: 1}
-    - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
-    - _SpecularColor: {r: 0.29803923, g: 0.24665815, b: 0.1764706, a: 1}
+    - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
---- !u!114 &396532747691809134
+--- !u!114 &9197000204797018986
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
@@ -130,4 +139,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  version: 5
+  version: 4

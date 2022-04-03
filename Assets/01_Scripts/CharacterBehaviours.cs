@@ -62,6 +62,7 @@ public class CharacterBehaviours : MonoBehaviour,IDamageable<float>,IKillable
 
     public void Dead()
     {
+        GameManager.instance.GameOver();
         //print("dead");
     }
 

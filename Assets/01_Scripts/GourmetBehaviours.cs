@@ -53,7 +53,7 @@ public class GourmetBehaviours : MonoBehaviour
         UpdateStarvingText();
 
         if (m_StarvingPoint <= 0)
-            print("Game Over");
+            GameManager.instance.GameOver();
 
         t_StravingTimer.ResetPlay();
     }

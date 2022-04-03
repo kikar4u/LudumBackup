@@ -49,4 +49,9 @@ public class GameManager : MonoBehaviour
     {
         CanvasManager.instance.UpdateIndegestionSlider(indigestionTime);
     }
+    public void GameOver()
+    {
+        Time.timeScale = 0f;
+        Debug.Log("GameOver");
+    }
 }
