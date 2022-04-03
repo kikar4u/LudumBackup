@@ -17,9 +17,12 @@ public class CharacterBehaviours : MonoBehaviour,IDamageable<float>,IKillable
     public CharacterController controller;
     public CharacterFeedbacks feedback;
 
+    
+
     private void Start()
     {
         t_BurnCookTimer = new Timer(m_dontMoveTime, GetBurn);
+        feedback.ChangeIndicator((int)m_Life);
     }
 
 
@@ -62,6 +65,7 @@ public class CharacterBehaviours : MonoBehaviour,IDamageable<float>,IKillable
     public void TakeDamage(float damage)
     {
         m_Life -= damage;
+        feedback.ChangeIndicator((int)m_Life);
 
         if (IsDead())
             Dead();

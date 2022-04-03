@@ -10,6 +10,10 @@ public class CharacterFeedbacks : MonoBehaviour
     public float m_ScaleTime;
     public float m_UnScaleTime;
 
+    [Header("Indicator")]
+    public List<Color> colors;
+    public SpriteRenderer burnIndicator;
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.M))
@@ -24,5 +28,11 @@ public class CharacterFeedbacks : MonoBehaviour
     internal void StopBurnAnim()
     {
         m_burnFeedback.transform.DOScale(0, m_UnScaleTime).SetEase(Ease.Linear);
+    }
+
+    public void ChangeIndicator(int burnLevel)
+    {
+        int burn = Mathf.Clamp(burnLevel - 1, 0, 10);
+        burnIndicator.color = colors[burn];
     }
 }

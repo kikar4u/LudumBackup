@@ -24,8 +24,9 @@ public class Food_Behaviours : MonoBehaviour
     public float m_MediumCookTime;
     private Timer t_MediumCookTimer;
 
-    [Header("Text")]
-    public TMPro.TMP_Text _LevelText;
+    [Header("Sprite Indicator")]
+    public SpriteRenderer m_CookIndicator;
+    public List<Color> m_CookColor;
 
     // Start is called before the first frame update
     void Start()
@@ -64,7 +65,7 @@ public class Food_Behaviours : MonoBehaviour
     {
         Vector3 directionPos = VectorsMethods.GetDirectionFromAtoB(transform.position, pos).normalized;
 
-        m_rb.AddForce(directionPos, ForceMode.Impulse);
+        m_rb.AddForce(directionPos * speed, ForceMode.Impulse);
     }
 
     public void MoveToTheGourmet(Vector3 pos)
@@ -82,7 +83,12 @@ public class Food_Behaviours : MonoBehaviour
     {
         print("+1");
         m_Level++;
-        _LevelText.text = m_Level.ToString();
+        print(m_Level + " " + (int)m_Level);
+
+        if( m_CookColor.Count > (int)m_Level-1)
+        {
+            m_CookIndicator.color = m_CookColor[(int)m_Level-1];
+        }
     }
 
     #region Gizmo
