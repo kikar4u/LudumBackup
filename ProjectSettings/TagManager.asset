@@ -7,6 +7,7 @@ TagManager:
   - Hot
   - Destination
   - Gourmet
+  - tools
   layers:
   - Default
   - TransparentFX
