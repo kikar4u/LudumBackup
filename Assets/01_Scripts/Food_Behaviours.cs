@@ -33,6 +33,7 @@ public class Food_Behaviours : MonoBehaviour
     {
         t_FastCookTimer = new Timer(m_FastCookTime, ChangeCookstyle);
         t_MediumCookTimer = new Timer(m_MediumCookTime, ChangeCookstyle);
+        m_CookIndicator.color = m_CookColor[0];
     }
 
     // Update is called once per frame
