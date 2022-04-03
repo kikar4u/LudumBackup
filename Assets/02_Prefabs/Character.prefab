@@ -565,9 +565,9 @@ MonoBehaviour:
   m_ScaleTime: 0.5
   m_UnScaleTime: 0.2
   colors:
-  - {r: 0, g: 0.048674583, b: 1, a: 1}
+  - {r: 1, g: 0.13088842, b: 0, a: 1}
   - {r: 0, g: 1, b: 0.00002193451, a: 1}
-  - {r: 1, g: 0, b: 0, a: 1}
+  - {r: 0, g: 0.10544729, b: 1, a: 1}
   burnIndicator: {fileID: 3351538566275963076}
 --- !u!114 &2098667601
 MonoBehaviour:
@@ -581,7 +581,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79607d4bb8bae994085b19e83c220a21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Life: 0
+  m_Life: 3
   m_dontMoveTime: 1
   controller: {fileID: 8498194440826475651}
   feedback: {fileID: 2098667594}
