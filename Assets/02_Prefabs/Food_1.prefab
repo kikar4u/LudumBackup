@@ -59,5 +59,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Food_1
       objectReference: {fileID: 0}
+    - target: {fileID: 8769791072278861018, guid: 0bd83ddb654a9ce4ea5fb8bbc06d458e, type: 3}
+      propertyPath: param
+      value: 
+      objectReference: {fileID: 11400000, guid: 2d5bc561a7021c8418c05f72e519613f, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0bd83ddb654a9ce4ea5fb8bbc06d458e, type: 3}

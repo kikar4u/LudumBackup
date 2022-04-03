@@ -40,7 +40,7 @@ public class Food_Behaviours : MonoBehaviour
         T_FastCookTimer = new Timer(m_FastCookTime, ChangeCookstyle);
         t_MediumCookTimer = new Timer(m_MediumCookTime, ChangeCookstyle);
         m_CookIndicator.color = m_CookColor[0];
-
+        Physics.IgnoreLayerCollision(9, 9);
         foodCookEvent = FMODUnity.RuntimeManager.CreateInstance(foodCookSound);
         FMODUnity.RuntimeManager.AttachInstanceToGameObject(foodCookEvent, transform);
         
@@ -50,6 +50,10 @@ public class Food_Behaviours : MonoBehaviour
     void Update()
     {
         DetectZone();
+        if (m_Level == FoodState.BURNED)
+        {
+            Destroy(gameObject, 3);
+        }
     }
 
     public void DetectZone()
