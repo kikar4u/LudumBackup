@@ -95,6 +95,7 @@ public class Food_Behaviours : MonoBehaviour
         m_Level++;
         print(m_Level + " " + (int)m_Level);
 
+        foodCookEvent.start();
         if( m_CookColor.Count > (int)m_Level-1)
         {
             m_CookIndicator.color = m_CookColor[(int)m_Level-1];

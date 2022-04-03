@@ -701,6 +701,7 @@ GameObject:
   - component: {fileID: 1328791156027356756}
   - component: {fileID: 4359625109864628938}
   - component: {fileID: 1526668033372805889}
+  - component: {fileID: 5424429201043212318}
   m_Layer: 0
   m_Name: Planche
   m_TagString: Untagged
@@ -708,6 +709,27 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &5424429201043212318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5424429201043212317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 235a9e871a207fd41ae238f3f7a11d4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Preparingfoods: []
+  m_CookingTime: 0
+  atelierSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &5424942274428343729
 GameObject:
   m_ObjectHideFlags: 0
@@ -719,6 +741,7 @@ GameObject:
   - component: {fileID: 5515755305478893937}
   - component: {fileID: 3044518489821593301}
   - component: {fileID: 5330476815358402013}
+  - component: {fileID: 5424942274428343730}
   m_Layer: 0
   m_Name: Poele
   m_TagString: Untagged
@@ -726,6 +749,27 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &5424942274428343730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5424942274428343729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7248cc8e5cf12354eb57eca47d4cc5ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Preparingfoods: []
+  m_CookingTime: 0
+  atelierSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!4 &5515755305478893937
 Transform:
   m_ObjectHideFlags: 0
@@ -966,11 +1010,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 8435242194067977234}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1cc1b7846cc24ed44a2f8dc793d5b523, type: 3}
+  m_Script: {fileID: 11500000, guid: 0705102d096d31b448c41b3ef12e9cd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Preparingfoods: []
-  m_CookingTime: 1
+  m_CookingTime: 0
+  atelierSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!4 &8451196090203989096
 Transform:
   m_ObjectHideFlags: 0

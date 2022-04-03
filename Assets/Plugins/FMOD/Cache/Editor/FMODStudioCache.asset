@@ -27,6 +27,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2500
+--- !u!114 &-7490499637071808428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Soundesign/Cuisson_Wok
+  m_EditorClassIdentifier: 
+  Path: event:/Soundesign/Cuisson_Wok
+  Guid:
+    Data1: 110751626
+    Data2: 1296867321
+    Data3: -2145513850
+    Data4: 1724709002
+  Banks:
+  - {fileID: -4925056531498080030}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4000
 --- !u!114 &-5932117456889861297
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54,6 +81,51 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 16000
+--- !u!114 &-5459290702318054126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Soundesign/Gourmet_Mange
+  m_EditorClassIdentifier: 
+  Path: event:/Soundesign/Gourmet_Mange
+  Guid:
+    Data1: 1671375366
+    Data2: 1169581939
+    Data3: 471167393
+    Data4: -164645798
+  Banks:
+  - {fileID: -4925056531498080030}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8500
+--- !u!114 &-4925056531498080030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD_BUILD/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 637845973276241830
+  FileSizes: []
+  Exists: 1
 --- !u!114 &-4665529641914090876
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73,6 +145,26 @@ MonoBehaviour:
   FileSizes:
   - Name: 
     Value: 1096
+  Exists: 1
+--- !u!114 &-4567162455532939590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD_BUILD/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 637845973276281891
+  FileSizes:
+  - Name: 
+    Value: 1424
   Exists: 1
 --- !u!114 &-4147753419616233255
 MonoBehaviour:
@@ -119,6 +211,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 36000
+--- !u!114 &-2298463884883392123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Soundesign/Grab
+  m_EditorClassIdentifier: 
+  Path: event:/Soundesign/Grab
+  Guid:
+    Data1: -1352897215
+    Data2: 1307509061
+    Data3: 1355089036
+    Data4: -2110605047
+  Banks:
+  - {fileID: -4925056531498080030}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1500
 --- !u!114 &-1019657815169740750
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -152,23 +271,30 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: -1019657815169740750}
-  - {fileID: -4147753419616233255}
+  - {fileID: -4567162455532939590}
+  - {fileID: -4925056531498080030}
   EditorEvents:
-  - {fileID: 9100633822758679357}
-  - {fileID: -3197850999932967493}
-  - {fileID: 192370334239660858}
-  - {fileID: -8511765968331834262}
-  - {fileID: 4234727791239393874}
-  - {fileID: 3988610753910421489}
-  - {fileID: 4684944928880359852}
-  - {fileID: -5932117456889861297}
+  - {fileID: 281834920462709597}
+  - {fileID: 8865414211120515191}
+  - {fileID: 8179702850539282285}
+  - {fileID: 5288805151118022080}
+  - {fileID: 1763491000119263426}
+  - {fileID: 2062158447095666547}
+  - {fileID: 5941771082239723684}
+  - {fileID: 3992551414004523348}
+  - {fileID: -5459290702318054126}
+  - {fileID: -2298463884883392123}
+  - {fileID: 5168842567262123788}
+  - {fileID: 2469645098016778057}
+  - {fileID: -7490499637071808428}
+  - {fileID: 7382696812898902540}
+  - {fileID: 4124355748438552534}
   EditorParameters: []
   MasterBanks:
-  - {fileID: -4147753419616233255}
+  - {fileID: -4925056531498080030}
   StringsBanks:
-  - {fileID: -1019657815169740750}
-  cacheTime: 637845920231681854
+  - {fileID: -4567162455532939590}
+  cacheTime: 637845973276281891
   cacheVersion: 10
 --- !u!114 &56813639191006927
 MonoBehaviour:
@@ -215,6 +341,114 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 10000
+--- !u!114 &281834920462709597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Soundesign/Crie_Legume
+  m_EditorClassIdentifier: 
+  Path: event:/Soundesign/Crie_Legume
+  Guid:
+    Data1: 1806328587
+    Data2: 1166288387
+    Data3: 1310355329
+    Data4: 647194218
+  Banks:
+  - {fileID: -4925056531498080030}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1500
+--- !u!114 &1763491000119263426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Soundesign/Ambiance
+  m_EditorClassIdentifier: 
+  Path: event:/Soundesign/Ambiance
+  Guid:
+    Data1: -1498249331
+    Data2: 1088754472
+    Data3: -1026035556
+    Data4: 2133096919
+  Banks:
+  - {fileID: -4925056531498080030}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 57000
+--- !u!114 &2062158447095666547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Soundesign/Player_Footsteps
+  m_EditorClassIdentifier: 
+  Path: event:/Soundesign/Player_Footsteps
+  Guid:
+    Data1: -1024850008
+    Data2: 1335420434
+    Data3: 1646489250
+    Data4: 1940264206
+  Banks:
+  - {fileID: -4925056531498080030}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 500
+--- !u!114 &2469645098016778057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Soundesign/Noyade
+  m_EditorClassIdentifier: 
+  Path: event:/Soundesign/Noyade
+  Guid:
+    Data1: -1972094478
+    Data2: 1081716814
+    Data3: 1981252489
+    Data4: -1968462610
+  Banks:
+  - {fileID: -4925056531498080030}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8500
 --- !u!114 &3988610753910421489
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -242,6 +476,60 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 500
+--- !u!114 &3992551414004523348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Soundesign/Indigestion
+  m_EditorClassIdentifier: 
+  Path: event:/Soundesign/Indigestion
+  Guid:
+    Data1: -1529643266
+    Data2: 1142441209
+    Data3: -1238292077
+    Data4: 1470866974
+  Banks:
+  - {fileID: -4925056531498080030}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 16000
+--- !u!114 &4124355748438552534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Soundesign/Decoupage_Legume
+  m_EditorClassIdentifier: 
+  Path: event:/Soundesign/Decoupage_Legume
+  Guid:
+    Data1: 593616631
+    Data2: 1249015332
+    Data3: -1471938418
+    Data4: -14281911
+  Banks:
+  - {fileID: -4925056531498080030}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5500
 --- !u!114 &4234727791239393874
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -296,6 +584,168 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3000
+--- !u!114 &5168842567262123788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Soundesign/Casserole
+  m_EditorClassIdentifier: 
+  Path: event:/Soundesign/Casserole
+  Guid:
+    Data1: 1620562589
+    Data2: 1081546002
+    Data3: 1421036425
+    Data4: -605656703
+  Banks:
+  - {fileID: -4925056531498080030}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 51000
+--- !u!114 &5288805151118022080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Soundesign/Dash
+  m_EditorClassIdentifier: 
+  Path: event:/Soundesign/Dash
+  Guid:
+    Data1: 180570238
+    Data2: 1112353491
+    Data3: -809562482
+    Data4: -628713404
+  Banks:
+  - {fileID: -4925056531498080030}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2500
+--- !u!114 &5941771082239723684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Soundesign/Cuisson_joueur
+  m_EditorClassIdentifier: 
+  Path: event:/Soundesign/Cuisson_joueur
+  Guid:
+    Data1: -488773153
+    Data2: 1122157545
+    Data3: -1713909118
+    Data4: -103256038
+  Banks:
+  - {fileID: -4925056531498080030}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3000
+--- !u!114 &7382696812898902540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Soundesign/Crie_Legume_BIG
+  m_EditorClassIdentifier: 
+  Path: event:/Soundesign/Crie_Legume_BIG
+  Guid:
+    Data1: -36488812
+    Data2: 1220713650
+    Data3: 431955628
+    Data4: 971068786
+  Banks:
+  - {fileID: -4925056531498080030}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 6500
+--- !u!114 &8179702850539282285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Soundesign/Carbonisation
+  m_EditorClassIdentifier: 
+  Path: event:/Soundesign/Carbonisation
+  Guid:
+    Data1: -626824614
+    Data2: 1325011027
+    Data3: -846608511
+    Data4: 2063747390
+  Banks:
+  - {fileID: -4925056531498080030}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 10000
+--- !u!114 &8865414211120515191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Soundesign/Idle_Boss
+  m_EditorClassIdentifier: 
+  Path: event:/Soundesign/Idle_Boss
+  Guid:
+    Data1: -452769504
+    Data2: 1284966613
+    Data3: 905821588
+    Data4: -1015297563
+  Banks:
+  - {fileID: -4925056531498080030}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 36000
 --- !u!114 &9100633822758679357
 MonoBehaviour:
   m_ObjectHideFlags: 0
