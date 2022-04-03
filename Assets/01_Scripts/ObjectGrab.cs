@@ -65,6 +65,7 @@ public class ObjectGrab : MonoBehaviour
                 else
                 {
                     print("out");
+                    hitInfo.transform.gameObject.GetComponent<AtelierBehaviours>().TakeFood();
                     this.transform.parent = null;
                     GetComponent<Rigidbody>().isKinematic = false;
                     Physics.IgnoreLayerCollision(0, 8, false);

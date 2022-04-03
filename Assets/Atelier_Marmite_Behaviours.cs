@@ -16,6 +16,9 @@ public class Atelier_Marmite_Behaviours : AtelierBehaviours
         }
         feedback = Instantiate(feedBackTimer, gameObject.transform.position + new Vector3(0, 2, 0), Quaternion.identity);
         t_CookingTimer.ResetPlay();
+
+        materialEvent.start();
+
         print("ok");
     }
     public override void CookFood()

@@ -5646,7 +5646,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 24941435583553746852a8176096f0e3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.58
+      value: 1.277
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 24941435583553746852a8176096f0e3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6298,6 +6298,13 @@ MonoBehaviour:
       Data3: -1471938418
       Data4: -14281911
     Path: event:/Soundesign/Decoupage_Legume
+  materialSound:
+    Guid:
+      Data1: -1289435873
+      Data2: 1134841493
+      Data3: -1867526519
+      Data4: 2072795081
+    Path: event:/Soundesign/Wood_Impact
 --- !u!65 &5424429201043212319
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6368,6 +6375,13 @@ MonoBehaviour:
       Data3: 1421036425
       Data4: -605656703
     Path: event:/Soundesign/Casserole
+  materialSound:
+    Guid:
+      Data1: 471581885
+      Data2: 1170631700
+      Data3: 1651894181
+      Data4: -500141359
+    Path: event:/Soundesign/Metal_Impact
 --- !u!65 &5424942274428343731
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6645,11 +6659,18 @@ MonoBehaviour:
   feedBackTimer: {fileID: 8980300277759149212, guid: 67712a44d53f0ef44a133b1fd09b30a7, type: 3}
   atelierSound:
     Guid:
-      Data1: 110751626
-      Data2: 1296867321
-      Data3: -2145513850
-      Data4: 1724709002
-    Path: event:/Soundesign/Cuisson_Wok
+      Data1: 1620562589
+      Data2: 1081546002
+      Data3: 1421036425
+      Data4: -605656703
+    Path: event:/Soundesign/Casserole
+  materialSound:
+    Guid:
+      Data1: -1972094478
+      Data2: 1081716814
+      Data3: 1981252489
+      Data4: -1968462610
+    Path: event:/Soundesign/Noyade
 --- !u!65 &8435242194067977236
 BoxCollider:
   m_ObjectHideFlags: 0

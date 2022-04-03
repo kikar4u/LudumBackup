@@ -24,7 +24,7 @@ public class GourmetBehaviours : MonoBehaviour
     private Timer t_IndegestionTimer;
 
     public FMODUnity.EventReference gourmetSound;
-    FMOD.Studio.EventInstance gourmetEvent;
+    FMOD.Studio.EventInstance gourmetEventIDLE;
 
     void Awake()
     {
@@ -43,8 +43,10 @@ public class GourmetBehaviours : MonoBehaviour
 
         UpdateStarvingText();
 
-        gourmetEvent = FMODUnity.RuntimeManager.CreateInstance(gourmetSound);
-        FMODUnity.RuntimeManager.AttachInstanceToGameObject(gourmetEvent, transform);
+        gourmetEventIDLE = FMODUnity.RuntimeManager.CreateInstance(gourmetSound);
+        FMODUnity.RuntimeManager.AttachInstanceToGameObject(gourmetEventIDLE, transform);
+
+        gourmetEventIDLE.start();
     }
 
     private void Starving()
