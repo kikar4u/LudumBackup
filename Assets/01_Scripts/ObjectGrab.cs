@@ -33,12 +33,33 @@ public class ObjectGrab : MonoBehaviour
         }
         else if(Input.GetKeyDown(m_ShootInput) && isOnHead)
         {
-            this.transform.parent = null;
-            GetComponent<Rigidbody>().isKinematic = false;
+            RaycastHit hitInfo;
+            Debug.DrawRay(gameObject.transform.position, GameObject.Find("Character").transform.TransformDirection(Vector3.forward) * 10000f, Color.red, 1000f);
+            if (Physics.Raycast(transform.position, GameObject.Find("Character").transform.TransformDirection(Vector3.forward), out hitInfo, Mathf.Infinity))
+            {
+                
+                if (hitInfo.transform.tag == "tools")
+                {
+                    Debug.Log("ici tools et hop");
+                    this.transform.parent = null;
+                    GetComponent<Rigidbody>().isKinematic = false;
 
-            GetComponent<SphereCollider>().isTrigger = false;
-            //GetComponent<Rigidbody>().AddForce(Destination.parent.forward * 2f, ForceMode.Impulse);
-            isOnHead = false;
+                    GetComponent<SphereCollider>().isTrigger = false;
+                    this.transform.position = hitInfo.transform.position;
+                    //GetComponent<Rigidbody>().AddForce(Destination.parent.forward * 2f, ForceMode.Impulse);
+                    isOnHead = false;
+                }
+            }
+            else
+            {
+                this.transform.parent = null;
+                GetComponent<Rigidbody>().isKinematic = false;
+
+                GetComponent<SphereCollider>().isTrigger = false;
+                //GetComponent<Rigidbody>().AddForce(Destination.parent.forward * 2f, ForceMode.Impulse);
+                isOnHead = false;
+            }
+
         }
     }
     void OnDrawGizmosSelected()
