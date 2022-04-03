@@ -185,6 +185,7 @@ GameObject:
   - component: {fileID: 8769791072278861018}
   - component: {fileID: 1599036350}
   - component: {fileID: 740213893333631358}
+  - component: {fileID: 4873782392158190882}
   m_Layer: 8
   m_Name: Food
   m_TagString: Untagged
@@ -290,7 +291,8 @@ MonoBehaviour:
     m_Bits: 128
   m_FastCookTime: 3
   m_MediumCookTime: 0.2
-  _LevelText: {fileID: 3966279456223111099}
+  m_CookIndicator: {fileID: 0}
+  m_CookColor: []
 --- !u!54 &1599036350
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -324,3 +326,15 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   m_ShootInput: 122
+--- !u!114 &4873782392158190882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8769791072278861017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 876ac46779568ec479660f57abbcce68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

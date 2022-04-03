@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
-
+namespace Polycrime { 
 public class ShootLogics : MonoBehaviour
 {
 
@@ -73,8 +73,9 @@ public class ShootLogics : MonoBehaviour
     public void Shoot(Food_Behaviours food)
     {
         print(food.name + " name");
-        //food.MoveToTheGourmet(GourmetBehaviours.instance.transform.position);
-        food.Shoot(transform.parent.position,m_ShootForce);
+            //food.MoveToTheGourmet(GourmetBehaviours.instance.transform.position);
+            GetComponent<PropulsionPad>().HandleTrigger(food.gameObject, food.gameObject.GetComponent<SphereCollider>().bounds);
+        //food.Shoot(transform.parent.position,m_ShootForce);
     }
 
 
@@ -96,4 +97,5 @@ public class ShootLogics : MonoBehaviour
     }
 
     #endregion
+}
 }

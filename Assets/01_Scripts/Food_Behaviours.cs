@@ -61,12 +61,6 @@ public class Food_Behaviours : MonoBehaviour
         }
     }
 
-    internal void Shoot(Vector3 pos, float speed)
-    {
-        Vector3 directionPos = VectorsMethods.GetDirectionFromAtoB(transform.position, pos).normalized;
-
-        m_rb.AddForce(directionPos * speed, ForceMode.Impulse);
-    }
 
     public void MoveToTheGourmet(Vector3 pos)
     {

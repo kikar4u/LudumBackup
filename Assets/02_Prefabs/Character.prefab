@@ -123,6 +123,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1183749886}
   - component: {fileID: 1183749887}
+  - component: {fileID: 688186307885430535}
   m_Layer: 0
   m_Name: ShootDetector
   m_TagString: Untagged
@@ -164,6 +165,24 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   m_ReloadShootTime: 0.5
+--- !u!114 &688186307885430535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1183749885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdf9560ab8e17473abc10fbe5437a4a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  reachTime: 1.5
+  trajectoryColor: {r: 1, g: 0, b: 1, a: 1}
+  showTrajectory: 1
+  toSpawn: {fileID: 8769791072278861017, guid: 0bd83ddb654a9ce4ea5fb8bbc06d458e, type: 3}
+  inputBased: 0
 --- !u!1 &2923945621401256810
 GameObject:
   m_ObjectHideFlags: 0
@@ -462,6 +481,8 @@ MonoBehaviour:
   m_burnFeedback: {fileID: 244970726}
   m_ScaleTime: 0.5
   m_UnScaleTime: 0.2
+  colors: []
+  burnIndicator: {fileID: 0}
 --- !u!114 &2098667601
 MonoBehaviour:
   m_ObjectHideFlags: 0
