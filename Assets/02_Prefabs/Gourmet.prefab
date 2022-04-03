@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5898302799112170906}
   m_Layer: 0
   m_Name: Gourmet
-  m_TagString: Untagged
+  m_TagString: Gourmet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -113,7 +113,7 @@ MonoBehaviour:
   m_StarvingPoint: 50
   m_ReduceStarvingPoint: 15
   m_IsIndigestion: 0
-  scoreText: {fileID: 5898302799591542492}
+  StarvingText: {fileID: 5898302799591542492}
   m_StravingTime: 3
   m_IndigestionTime: 5
 --- !u!1 &5898302799591542494
