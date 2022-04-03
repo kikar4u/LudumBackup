@@ -4,12 +4,22 @@ using UnityEngine;
 
 public class Atelier_Planche_Behaviours : AtelierBehaviours
 {
+    private void Start()
+    {
+        
+    }
     public override void DropFood(Food_Behaviours[] foods)
     {
-        foreach (Food_Behaviours item in foods)
+        m_Preparingfoods = foods;
+        t_CookingTimer = new Timer(m_CookingTime * foods.Length, CookFood);
+        t_CookingTimer.ResetPlay();
+        print("ok");
+    }
+    public override void CookFood()
+    {
+        foreach (Food_Behaviours item in m_Preparingfoods)
         {
             item.isCut = true;
         }
-        print("ok");
     }
 }

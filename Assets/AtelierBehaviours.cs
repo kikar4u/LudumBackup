@@ -10,7 +10,7 @@ public class AtelierBehaviours : MonoBehaviour
     [Header("Timer")]
     [Min(0.2f)]
     public float m_CookingTime;
-    private Timer t_CookingTimer;
+    protected Timer t_CookingTimer;
 
     public FMODUnity.EventReference atelierSound;
     FMOD.Studio.EventInstance atelierEvent;
@@ -18,8 +18,8 @@ public class AtelierBehaviours : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        atelierEvent = FMODUnity.RuntimeManager.CreateInstance(atelierSound);
-        FMODUnity.RuntimeManager.AttachInstanceToGameObject(atelierEvent, transform);
+        //atelierEvent = FMODUnity.RuntimeManager.CreateInstance(atelierSound);
+        //FMODUnity.RuntimeManager.AttachInstanceToGameObject(atelierEvent, transform);
     }
 
     // Update is called once per frame

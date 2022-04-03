@@ -13,6 +13,7 @@ namespace Polycrime
 
         protected virtual void Start()
         {
+            target = GameObject.Find("Gourmet").transform;
             // Added an empty start so the script can be enabled/disabled
         }
 
