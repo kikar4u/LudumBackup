@@ -51,7 +51,9 @@ public class GameManager : MonoBehaviour
     }
     public void GameOver()
     {
-        //Time.timeScale = 0f;
+        Time.timeScale = 0f;
+        CanvasManager.instance.transform.GetChild(CanvasManager.instance.transform.childCount - 1).gameObject.SetActive(true);
+
         Debug.Log("GameOver");
     }
 }

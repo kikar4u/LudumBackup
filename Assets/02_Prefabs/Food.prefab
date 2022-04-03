@@ -166,7 +166,7 @@ MonoBehaviour:
   m_player:
     serializedVersion: 2
     m_Bits: 512
-  m_ShootInput: 122
+  m_ShootInput: 113
   radiusSize: 3
   hit: []
   grabSound:
