@@ -34,6 +34,9 @@ public class CharacterBehaviours : MonoBehaviour,IDamageable<float>,IKillable
             t_BurnCookTimer.Pause();
             t_BurnCookTimer.Reset();
             feedback.StopBurnAnim();
+
+            //StartCoroutine(feedback.PlayFootStepSound());
+
             return;
         }
             

@@ -28,6 +28,10 @@ public class Food_Behaviours : MonoBehaviour
     public SpriteRenderer m_CookIndicator;
     public List<Color> m_CookColor;
 
+
+    public FMODUnity.EventReference foodCookSound;
+    FMOD.Studio.EventInstance foodCookEvent;
+
     public Timer T_FastCookTimer { get => t_FastCookTimer; set => t_FastCookTimer = value; }
 
     // Start is called before the first frame update
@@ -36,6 +40,9 @@ public class Food_Behaviours : MonoBehaviour
         T_FastCookTimer = new Timer(m_FastCookTime, ChangeCookstyle);
         t_MediumCookTimer = new Timer(m_MediumCookTime, ChangeCookstyle);
         m_CookIndicator.color = m_CookColor[0];
+
+        foodCookEvent = FMODUnity.RuntimeManager.CreateInstance(foodCookSound);
+        FMODUnity.RuntimeManager.AttachInstanceToGameObject(foodCookEvent, transform);
     }
 
     // Update is called once per frame

@@ -116,6 +116,13 @@ MonoBehaviour:
   StarvingText: {fileID: 5898302799591542492}
   m_StravingTime: 3
   m_IndigestionTime: 5
+  gourmetSound:
+    Guid:
+      Data1: -452769504
+      Data2: 1284966613
+      Data3: 905821588
+      Data4: -1015297563
+    Path: event:/Soundesign/Idle_Boss
 --- !u!1 &5898302799591542494
 GameObject:
   m_ObjectHideFlags: 0

@@ -14,6 +14,21 @@ public class CharacterFeedbacks : MonoBehaviour
     public List<Color> colors;
     public SpriteRenderer burnIndicator;
 
+    public FMODUnity.EventReference burnSound;
+    FMOD.Studio.EventInstance burnEvent;
+
+    public FMODUnity.EventReference footStepSound;
+    FMOD.Studio.EventInstance footStepEvent;
+
+    private void Start()
+    {
+        burnEvent = FMODUnity.RuntimeManager.CreateInstance(burnSound);
+        FMODUnity.RuntimeManager.AttachInstanceToGameObject(burnEvent, transform);
+
+        footStepEvent = FMODUnity.RuntimeManager.CreateInstance(footStepSound);
+        FMODUnity.RuntimeManager.AttachInstanceToGameObject(footStepEvent, transform);
+    }
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.M))
@@ -30,8 +45,14 @@ public class CharacterFeedbacks : MonoBehaviour
         m_burnFeedback.transform.DOScale(0, m_UnScaleTime).SetEase(Ease.Linear);
     }
 
+    public void PlayFootStepSound()
+    {
+        footStepEvent.start();
+    }
+
     public void ChangeIndicator(int burnLevel)
     {
+        burnEvent.start();
         int burn = Mathf.Clamp(burnLevel - 1, 0, 10);
         burnIndicator.color = colors[burn];
     }

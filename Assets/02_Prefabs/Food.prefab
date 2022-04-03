@@ -126,6 +126,13 @@ MonoBehaviour:
   - {r: 0, g: 0.11251116, b: 1, a: 1}
   - {r: 0.3800627, g: 1, b: 0, a: 1}
   - {r: 1, g: 0, b: 0, a: 1}
+  foodCookSound:
+    Guid:
+      Data1: 1806328587
+      Data2: 1166288387
+      Data3: 1310355329
+      Data4: 647194218
+    Path: event:/Soundesign/Crie_Legume
 --- !u!54 &1599036350
 Rigidbody:
   m_ObjectHideFlags: 0

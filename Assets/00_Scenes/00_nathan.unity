@@ -366,7 +366,6 @@ GameObject:
   - component: {fileID: 465819771}
   - component: {fileID: 465819770}
   - component: {fileID: 465819773}
-  - component: {fileID: 465819774}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -471,13 +470,18 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
---- !u!114 &465819774
+--- !u!1 &1172885178 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8498194440826475653, guid: 365a073cd6ddd8945a99aa4cc0020d90, type: 3}
+  m_PrefabInstance: {fileID: 8498194442488804556}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1172885179
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 465819769}
+  m_GameObject: {fileID: 1172885178}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
@@ -890,6 +894,30 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2098667594, guid: 365a073cd6ddd8945a99aa4cc0020d90, type: 3}
+      propertyPath: burnSound.Path
+      value: event:/Soundesign/Cuisson_joueur
+      objectReference: {fileID: 0}
+    - target: {fileID: 2098667594, guid: 365a073cd6ddd8945a99aa4cc0020d90, type: 3}
+      propertyPath: footStepSound.Path
+      value: event:/Soundesign/Player_Footsteps
+      objectReference: {fileID: 0}
+    - target: {fileID: 2098667594, guid: 365a073cd6ddd8945a99aa4cc0020d90, type: 3}
+      propertyPath: burnSound.Guid.Data1
+      value: -488773153
+      objectReference: {fileID: 0}
+    - target: {fileID: 2098667594, guid: 365a073cd6ddd8945a99aa4cc0020d90, type: 3}
+      propertyPath: burnSound.Guid.Data2
+      value: 1122157545
+      objectReference: {fileID: 0}
+    - target: {fileID: 2098667594, guid: 365a073cd6ddd8945a99aa4cc0020d90, type: 3}
+      propertyPath: burnSound.Guid.Data3
+      value: -1713909118
+      objectReference: {fileID: 0}
+    - target: {fileID: 2098667594, guid: 365a073cd6ddd8945a99aa4cc0020d90, type: 3}
+      propertyPath: burnSound.Guid.Data4
+      value: -103256038
+      objectReference: {fileID: 0}
+    - target: {fileID: 2098667594, guid: 365a073cd6ddd8945a99aa4cc0020d90, type: 3}
       propertyPath: colors.Array.data[0].b
       value: 0
       objectReference: {fileID: 0}
@@ -912,6 +940,22 @@ PrefabInstance:
     - target: {fileID: 2098667594, guid: 365a073cd6ddd8945a99aa4cc0020d90, type: 3}
       propertyPath: colors.Array.data[2].r
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2098667594, guid: 365a073cd6ddd8945a99aa4cc0020d90, type: 3}
+      propertyPath: footStepSound.Guid.Data1
+      value: -1024850008
+      objectReference: {fileID: 0}
+    - target: {fileID: 2098667594, guid: 365a073cd6ddd8945a99aa4cc0020d90, type: 3}
+      propertyPath: footStepSound.Guid.Data2
+      value: 1335420434
+      objectReference: {fileID: 0}
+    - target: {fileID: 2098667594, guid: 365a073cd6ddd8945a99aa4cc0020d90, type: 3}
+      propertyPath: footStepSound.Guid.Data3
+      value: 1646489250
+      objectReference: {fileID: 0}
+    - target: {fileID: 2098667594, guid: 365a073cd6ddd8945a99aa4cc0020d90, type: 3}
+      propertyPath: footStepSound.Guid.Data4
+      value: 1940264206
       objectReference: {fileID: 0}
     - target: {fileID: 2098667601, guid: 365a073cd6ddd8945a99aa4cc0020d90, type: 3}
       propertyPath: m_Life
