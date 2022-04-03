@@ -28,7 +28,7 @@ public class Food_Behaviours : MonoBehaviour
     public SpriteRenderer m_CookIndicator;
     public List<Color> m_CookColor;
 
-
+    public bool isCut = false;
     public FMODUnity.EventReference foodCookSound;
     FMOD.Studio.EventInstance foodCookEvent;
 

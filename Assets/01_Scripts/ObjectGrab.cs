@@ -11,7 +11,10 @@ public class ObjectGrab : MonoBehaviour
     public float radiusSize;
     private bool isOnHead = false;
     public Collider[] hit;
-
+    private void Start()
+    {
+        
+    }
     public void Update()
     {
         var playerPosition = GameObject.FindGameObjectWithTag("Player").transform.position;
@@ -51,12 +54,24 @@ public class ObjectGrab : MonoBehaviour
                     //GetComponent<Rigidbody>().AddForce(Destination.parent.forward * 2f, ForceMode.Impulse);
                     isOnHead = false;
                 }
+                else
+                {
+                    print("out");
+                    this.transform.parent = null;
+                    GetComponent<Rigidbody>().isKinematic = false;
+                    Physics.IgnoreLayerCollision(0, 8, false);
+                    GetComponent<SphereCollider>().isTrigger = false;
+                    //GetComponent<Rigidbody>().AddForce(Destination.parent.forward * 2f, ForceMode.Impulse);
+                    isOnHead = false;
+                }
+
             }
             else
             {
+                print("out");
                 this.transform.parent = null;
                 GetComponent<Rigidbody>().isKinematic = false;
-                Physics.IgnoreLayerCollision(8, 8, false);
+                Physics.IgnoreLayerCollision(0, 8, false);
                 GetComponent<SphereCollider>().isTrigger = false;
                 //GetComponent<Rigidbody>().AddForce(Destination.parent.forward * 2f, ForceMode.Impulse);
                 isOnHead = false;
