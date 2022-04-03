@@ -51,7 +51,7 @@ public class GameManager : MonoBehaviour
     }
     public void GameOver()
     {
-        Time.timeScale = 0f;
+        //Time.timeScale = 0f;
         Debug.Log("GameOver");
     }
 }

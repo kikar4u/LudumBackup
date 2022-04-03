@@ -4,10 +4,17 @@ using UnityEngine;
 
 public class Atelier_Planche_Behaviours : AtelierBehaviours
 {
+    GameObject feedback;
     public override void DropFood(Food_Behaviours[] foods)
     {
         m_Preparingfoods = foods;
+
         t_CookingTimer = new Timer(m_CookingTime * foods.Length, CookFood);
+        if (feedback != null)
+        {
+            Destroy(feedback);
+        }
+        feedback = Instantiate(feedBackTimer, gameObject.transform.position + new Vector3(0, 2, 0), Quaternion.identity);
         t_CookingTimer.ResetPlay();
         print("ok");
     }
@@ -17,6 +24,7 @@ public class Atelier_Planche_Behaviours : AtelierBehaviours
         {
             item.foodStatus = Status.CUT;
         }
+        feedback.GetComponent<SpriteRenderer>().color = Color.blue;
         atelierEvent.start();
     }
 }
