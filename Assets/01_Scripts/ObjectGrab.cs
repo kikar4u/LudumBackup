@@ -23,6 +23,7 @@ public class ObjectGrab : MonoBehaviour
         if (Input.GetKeyDown(m_ShootInput) && hit.Length >= 1 && !isOnHead)
         {
             Debug.Log(hit[0].gameObject);
+            GetComponent<Food_Behaviours>().T_FastCookTimer.Pause();
             Destination = GameObject.FindGameObjectWithTag("Destination").transform;
             GetComponent<SphereCollider>().isTrigger = true;
             GetComponent<Rigidbody>().isKinematic = true;

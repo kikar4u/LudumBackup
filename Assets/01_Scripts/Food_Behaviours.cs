@@ -28,10 +28,12 @@ public class Food_Behaviours : MonoBehaviour
     public SpriteRenderer m_CookIndicator;
     public List<Color> m_CookColor;
 
+    public Timer T_FastCookTimer { get => t_FastCookTimer; set => t_FastCookTimer = value; }
+
     // Start is called before the first frame update
     void Start()
     {
-        t_FastCookTimer = new Timer(m_FastCookTime, ChangeCookstyle);
+        T_FastCookTimer = new Timer(m_FastCookTime, ChangeCookstyle);
         t_MediumCookTimer = new Timer(m_MediumCookTime, ChangeCookstyle);
         m_CookIndicator.color = m_CookColor[0];
     }
@@ -53,7 +55,7 @@ public class Food_Behaviours : MonoBehaviour
         {
             if (collider.gameObject.CompareTag("Hot"))
             {
-                if (t_FastCookTimer.IsStarted())
+                if (T_FastCookTimer.IsStarted())
                     return;
 
                 Cook();
@@ -77,7 +79,7 @@ public class Food_Behaviours : MonoBehaviour
     public void Cook()
     {
         print("cook");
-        t_FastCookTimer.ResetPlay();
+        T_FastCookTimer.ResetPlay();
     }
 
     public void ChangeCookstyle()
