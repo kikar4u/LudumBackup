@@ -23,3 +23,6 @@ MonoBehaviour:
     m_point: -10
   - m_FoodLevel: 4
     m_point: -15
+  FryMultiplicator: 2
+  CutMultiplicator: 5
+  BoiledMultiplicator: 0.5

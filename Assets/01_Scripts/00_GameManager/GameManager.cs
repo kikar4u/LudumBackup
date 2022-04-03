@@ -9,7 +9,10 @@ public class GameManager : MonoBehaviour
 
     GameStatus status = GameStatus.RUNNING;
 
+    private int gameScore;
+
     public GameStatus Status { get => status; set => status = value; }
+    public int GameScore { get => gameScore; set => gameScore = value; }
 
     void Awake()
     {
@@ -29,6 +32,12 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void UpdateScore(int increment)
+    {
+        GameScore += increment;
+        CanvasManager.instance.UpdateScoreText(GameScore);
     }
 
     public void UpdateStarvingUI(float starvingPoint)

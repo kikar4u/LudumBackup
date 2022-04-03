@@ -4,10 +4,6 @@ using UnityEngine;
 
 public class Atelier_Planche_Behaviours : AtelierBehaviours
 {
-    private void Start()
-    {
-        
-    }
     public override void DropFood(Food_Behaviours[] foods)
     {
         m_Preparingfoods = foods;
@@ -19,7 +15,7 @@ public class Atelier_Planche_Behaviours : AtelierBehaviours
     {
         foreach (Food_Behaviours item in m_Preparingfoods)
         {
-            item.isCut = true;
+            item.foodStatus = Status.CUT;
         }
     }
 }

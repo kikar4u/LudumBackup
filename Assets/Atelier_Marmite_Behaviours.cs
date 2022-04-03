@@ -6,6 +6,16 @@ public class Atelier_Marmite_Behaviours : AtelierBehaviours
 {
     public override void DropFood(Food_Behaviours[] foods)
     {
+        m_Preparingfoods = foods;
+        t_CookingTimer = new Timer(m_CookingTime * foods.Length, CookFood);
+        t_CookingTimer.ResetPlay();
         print("ok");
+    }
+    public override void CookFood()
+    {
+        foreach (Food_Behaviours item in m_Preparingfoods)
+        {
+            item.foodStatus = Status.BOILED;
+        }
     }
 }

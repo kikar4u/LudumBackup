@@ -94,9 +94,13 @@ public class GourmetBehaviours : MonoBehaviour
         if (!collision.gameObject.TryGetComponent<Food_Behaviours>(out food) || m_IsIndigestion)
             return;
 
-        IncreaseStarvingPoint(food.param.GetPoint(food.m_Level));
+        IncreaseStarvingPoint(food.param.GetPoint(food.m_Level, food.foodStatus));
 
         UpdateStarvingText();
+
+        GameManager.instance.UpdateScore((int)m_StarvingPoint);
+
+        Destroy(food.gameObject, 1f);
     }
 
 

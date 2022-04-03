@@ -16,6 +16,9 @@ public class CanvasManager : MonoBehaviour
     public Slider m_StarvingGourmetSlider;
     public Slider m_IndegestionGourmetSlider;
 
+    [Header("Score")]
+    public TMPro.TMP_Text ScoreText;
+
     void Awake()
     {
         if (instance != null)
@@ -28,6 +31,7 @@ public class CanvasManager : MonoBehaviour
     void Start()
     {
         SetUpGourmetSlider();
+        UpdateScoreText(0);
     }
 
     // Update is called once per frame
@@ -55,6 +59,11 @@ public class CanvasManager : MonoBehaviour
     public void UpdateStarvingSlider(float value)
     {
         StartCoroutine(LerpSliderValueADD(m_StarvingGourmetSlider, value, 0.2f));
+    }
+
+    public void UpdateScoreText(int score)
+    {
+        ScoreText.text = score.ToString();
     }
 
     IEnumerator LerpSliderValueADD(Slider slider, float endValue, float duration)

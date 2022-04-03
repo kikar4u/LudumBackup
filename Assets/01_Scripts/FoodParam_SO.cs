@@ -11,6 +11,14 @@ public enum FoodState
     BURNED
 }
 
+public enum Status
+{
+    NONE,
+    FRY,
+    CUT,
+    BOILED
+}
+
 [System.Serializable]
 public class FoodParam {
     public FoodState m_FoodLevel;
@@ -22,14 +30,35 @@ public class FoodParam_SO : ScriptableObject
 {
     public List<FoodParam> param;
 
-    public float GetPoint(FoodState state)
+    public float FryMultiplicator;
+    public float CutMultiplicator;
+    public float BoiledMultiplicator;
+
+    public float GetPoint(FoodState state, Status food)
     {
+        int baseValue = 0;
         foreach (var item in param)
         {
             if (item.m_FoodLevel == state)
-                return item.m_point;
+                baseValue = item.m_point;
         }
 
-        return 0;
+        switch (food)
+        {
+            case Status.FRY:
+                return baseValue * FryMultiplicator;
+                break;
+            case Status.CUT:
+                return baseValue * CutMultiplicator;
+                break;
+            case Status.BOILED:
+                return baseValue * BoiledMultiplicator;
+                break;
+            default:
+                return baseValue;
+                break;
+        }
+
+        
     }
 }
