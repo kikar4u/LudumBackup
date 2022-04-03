@@ -11,10 +11,16 @@ public class ObjectGrab : MonoBehaviour
     public float radiusSize;
     private bool isOnHead = false;
     public Collider[] hit;
+
+    public FMODUnity.EventReference grabSound;
+    FMOD.Studio.EventInstance grabEvent;
+
     private void Start()
     {
-        
+        grabEvent = FMODUnity.RuntimeManager.CreateInstance(grabSound);
+        FMODUnity.RuntimeManager.AttachInstanceToGameObject(grabEvent, transform);
     }
+
     public void Update()
     {
         var playerPosition = GameObject.FindGameObjectWithTag("Player").transform.position;
@@ -27,6 +33,8 @@ public class ObjectGrab : MonoBehaviour
         if (Input.GetKeyDown(m_ShootInput) && hit.Length >= 1 && !isOnHead)
         {
             Debug.Log(hit[0].gameObject);
+
+            grabEvent.start();
             GetComponent<Food_Behaviours>().T_FastCookTimer.Pause();
             Destination = GameObject.FindGameObjectWithTag("Destination").transform;
             GetComponent<SphereCollider>().isTrigger = true;

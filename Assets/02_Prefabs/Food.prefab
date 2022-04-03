@@ -126,6 +126,7 @@ MonoBehaviour:
   - {r: 0, g: 0.11251116, b: 1, a: 1}
   - {r: 0.3800627, g: 1, b: 0, a: 1}
   - {r: 1, g: 0, b: 0, a: 1}
+  foodStatus: 0
   foodCookSound:
     Guid:
       Data1: 1806328587
@@ -168,6 +169,13 @@ MonoBehaviour:
   m_ShootInput: 122
   radiusSize: 3
   hit: []
+  grabSound:
+    Guid:
+      Data1: -1352897215
+      Data2: 1307509061
+      Data3: 1355089036
+      Data4: -2110605047
+    Path: event:/Soundesign/Grab
 --- !u!114 &4873782392158190882
 MonoBehaviour:
   m_ObjectHideFlags: 0

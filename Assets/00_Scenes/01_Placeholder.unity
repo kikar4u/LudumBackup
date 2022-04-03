@@ -130,10 +130,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 7708212399981515039, guid: 365a073cd6ddd8945a99aa4cc0020d90, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -1.089
-      objectReference: {fileID: 0}
     - target: {fileID: 8498194440826475650, guid: 365a073cd6ddd8945a99aa4cc0020d90, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -186,10 +182,6 @@ PrefabInstance:
       propertyPath: camera
       value: 
       objectReference: {fileID: 312140236}
-    - target: {fileID: 8498194440826475655, guid: 365a073cd6ddd8945a99aa4cc0020d90, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 365a073cd6ddd8945a99aa4cc0020d90, type: 3}
 --- !u!1001 &239930786
@@ -453,41 +445,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ab1642b7469d4e43ba9168f71b9e507, type: 3}
---- !u!1 &493069022 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2923945621401256810, guid: 365a073cd6ddd8945a99aa4cc0020d90, type: 3}
-  m_PrefabInstance: {fileID: 56643123}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &493069024
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 493069022}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6e796a34b1d9a544a18c95c214b6758, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_food:
-    serializedVersion: 2
-    m_Bits: 256
-  hitFood: []
-  hit: []
---- !u!65 &493069025
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 493069022}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &755850146
 PrefabInstance:
   m_ObjectHideFlags: 0
