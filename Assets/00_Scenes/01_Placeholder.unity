@@ -5161,8 +5161,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 193367397}
-  m_LocalRotation: {x: 0.0002818774, y: 0.98445994, z: -0.17560203, w: 0.0015802609}
-  m_LocalPosition: {x: -0.21, y: 12.41, z: 24.862}
+  m_LocalRotation: {x: 0.0025173742, y: 0.9795543, z: -0.20078932, w: 0.0122810565}
+  m_LocalPosition: {x: -0.21, y: 11.9, z: 18.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 161209051}
@@ -5416,8 +5416,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 312140234}
-  m_LocalRotation: {x: 0.0002818774, y: 0.98445994, z: -0.17560203, w: 0.0015802609}
-  m_LocalPosition: {x: -0.21, y: 12.41, z: 24.862}
+  m_LocalRotation: {x: 0.0025173742, y: 0.9795543, z: -0.20078932, w: 0.0122810565}
+  m_LocalPosition: {x: -0.21, y: 11.9, z: 18.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -5860,10 +5860,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1330954073981486934, guid: 678b1ad53533fd5488be4b8b17d4f1b4, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.147
-      objectReference: {fileID: 0}
     - target: {fileID: 5898302799112170886, guid: 678b1ad53533fd5488be4b8b17d4f1b4, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -5874,7 +5870,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5898302799112170886, guid: 678b1ad53533fd5488be4b8b17d4f1b4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.46
+      value: -5.7
       objectReference: {fileID: 0}
     - target: {fileID: 5898302799112170886, guid: 678b1ad53533fd5488be4b8b17d4f1b4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5908,21 +5904,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5898302799112170906, guid: 678b1ad53533fd5488be4b8b17d4f1b4, type: 3}
-      propertyPath: m_StravingTime
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5898302799112170906, guid: 678b1ad53533fd5488be4b8b17d4f1b4, type: 3}
-      propertyPath: m_IndigestionTime
-      value: 8
-      objectReference: {fileID: 0}
     - target: {fileID: 5898302799112170909, guid: 678b1ad53533fd5488be4b8b17d4f1b4, type: 3}
       propertyPath: m_Name
       value: Gourmet
-      objectReference: {fileID: 0}
-    - target: {fileID: 5898302799112170909, guid: 678b1ad53533fd5488be4b8b17d4f1b4, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 678b1ad53533fd5488be4b8b17d4f1b4, type: 3}
