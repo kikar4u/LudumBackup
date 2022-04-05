@@ -53,7 +53,7 @@ public class CharacterFeedbacks : MonoBehaviour
     public void ChangeIndicator(int burnLevel)
     {
         burnEvent.start();
-        int burn = Mathf.Clamp(burnLevel - 1, 0, 10);
+        int burn = Mathf.Clamp(burnLevel - 1, 0, colors.Count-1);
         burnIndicator.color = colors[burn];
     }
 }

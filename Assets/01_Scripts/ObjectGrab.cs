@@ -92,7 +92,7 @@ public class ObjectGrab : MonoBehaviour
     {
         // Draw a yellow sphere at the transform's position
         Gizmos.color = Color.yellow;
-        Gizmos.DrawSphere(transform.position, radiusSize);
+        Gizmos.DrawWireSphere(transform.position, radiusSize);
     }
     private void OnMouseUp()
     {

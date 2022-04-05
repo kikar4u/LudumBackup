@@ -50,10 +50,10 @@ public class Food_Behaviours : MonoBehaviour
     void Update()
     {
         DetectZone();
-        if (m_Level == FoodState.BURNED)
+        /*if (m_Level == FoodState.BURNED)
         {
             Destroy(gameObject, 3);
-        }
+        }*/
     }
 
     public void DetectZone()
