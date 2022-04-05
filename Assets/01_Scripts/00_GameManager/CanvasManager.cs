@@ -11,6 +11,8 @@ public class CanvasManager : MonoBehaviour
 
     [Header("Panel")]
     public GameObject m_GourmetPanel;
+    public GameObject m_GamePanel;
+    public GameObject m_PausePanel;
 
     [Header("Slider")]
     public Slider m_StarvingGourmetSlider;
@@ -22,7 +24,7 @@ public class CanvasManager : MonoBehaviour
     void Awake()
     {
         if (instance != null)
-            Debug.LogWarning("Multiple instance of same Singleton : GameManager");
+            Debug.LogWarning("Multiple instance of same Singleton : CanvasManager");
         else
             instance = this;
     }
@@ -32,12 +34,6 @@ public class CanvasManager : MonoBehaviour
     {
         SetUpGourmetSlider();
         UpdateScoreText(0);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
 
@@ -66,6 +62,21 @@ public class CanvasManager : MonoBehaviour
         ScoreText.text = score.ToString();
     }
 
+    public void ShowPausePanel()
+    {
+        m_PausePanel.SetActive(true);
+        m_GamePanel.SetActive(false);
+    }
+    public void HidePausePanel()
+    {
+        GameManager.instance.Status = GameStatus.RUNNING;
+        Time.timeScale = 1;
+        m_PausePanel.SetActive(false);
+        m_GamePanel.SetActive(true);
+    }
+
+
+
     IEnumerator LerpSliderValueADD(Slider slider, float endValue, float duration)
     {
         float time = 0;
@@ -78,6 +89,8 @@ public class CanvasManager : MonoBehaviour
         }
         slider.value = endValue;
     }
+
+
 
     IEnumerator LerpSliderValueREDUCE(Slider slider, float endValue, float duration)
     {
