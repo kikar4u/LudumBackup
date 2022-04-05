@@ -22,7 +22,8 @@ public class GourmetBehaviours : MonoBehaviour
     private Timer t_StravingTimer;
     public float m_IndigestionTime;
     private Timer t_IndegestionTimer;
-
+    [Header("Animation Controller")]
+    public Animator animatorController;
     public FMODUnity.EventReference gourmetSound;
     FMOD.Studio.EventInstance gourmetEventIDLE;
 
@@ -48,7 +49,6 @@ public class GourmetBehaviours : MonoBehaviour
 
         gourmetEventIDLE.start();
     }
-
     private void Starving()
     {
         m_StarvingPoint -= m_ReduceStarvingPoint;
@@ -71,6 +71,7 @@ public class GourmetBehaviours : MonoBehaviour
             GameManager.instance.StartIndegestionUI(m_IndigestionTime);
             m_StarvingPoint = m_MaxStarvingPoint;
             m_IsIndigestion = true;
+
             t_IndegestionTimer.ResetPlay();
             GetComponent<Renderer>().material.color = Color.green;
         }
@@ -80,6 +81,7 @@ public class GourmetBehaviours : MonoBehaviour
 
     public bool IsIndigestion()
     {
+        
         return m_StarvingPoint > m_MaxStarvingPoint;
     }
 
