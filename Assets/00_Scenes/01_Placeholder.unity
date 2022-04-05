@@ -5756,7 +5756,7 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 6999444626414550117, guid: 666aa25cfbc174b4180601c1c04d2446, type: 3}
-      propertyPath: m_AnchorMax.x
+      propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6999444626596033409, guid: 666aa25cfbc174b4180601c1c04d2446, type: 3}
@@ -5846,10 +5846,6 @@ PrefabInstance:
     - target: {fileID: 6999444626596033420, guid: 666aa25cfbc174b4180601c1c04d2446, type: 3}
       propertyPath: m_Name
       value: Canvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 6999444627985473943, guid: 666aa25cfbc174b4180601c1c04d2446, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 2.4999695
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 666aa25cfbc174b4180601c1c04d2446, type: 3}
