@@ -38,6 +38,11 @@ public class GameManager : MonoBehaviour
             Time.timeScale = 1.0f;
             gameOver = false;
         }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            PauseGame();
+        }
     }
 
     public void UpdateScore(int increment)
@@ -61,5 +66,20 @@ public class GameManager : MonoBehaviour
         CanvasManager.instance.transform.GetChild(CanvasManager.instance.transform.childCount - 1).gameObject.SetActive(true);
         gameOver = true;
         Debug.Log("GameOver");
+    }
+
+    public void PauseGame()
+    {
+        if(status == GameStatus.RUNNING)
+        {
+            status = GameStatus.PAUSED;
+            Time.timeScale = 0;
+            CanvasManager.instance.ShowPausePanel();
+        }
+        else
+        {
+            CanvasManager.instance.HidePausePanel();
+        }
+        
     }
 }
