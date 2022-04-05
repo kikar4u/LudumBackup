@@ -16,6 +16,9 @@ public class GourmetBehaviours : MonoBehaviour
 
     public TMPro.TMP_Text StarvingText;
 
+    [Space]
+    public Animator a_BossAnimator;
+
     [Header("Timer")]
     [Min(0.2f)]
     public float m_StravingTime;
@@ -68,12 +71,7 @@ public class GourmetBehaviours : MonoBehaviour
 
         if (IsIndigestion())
         {
-            GameManager.instance.StartIndegestionUI(m_IndigestionTime);
-            m_StarvingPoint = m_MaxStarvingPoint;
-            m_IsIndigestion = true;
-
-            t_IndegestionTimer.ResetPlay();
-            GetComponent<Renderer>().material.color = Color.green;
+            StartIndigestion();
         }
 
         t_StravingTimer.ResetPlay();
@@ -81,14 +79,26 @@ public class GourmetBehaviours : MonoBehaviour
 
     public bool IsIndigestion()
     {
-        
         return m_StarvingPoint > m_MaxStarvingPoint;
+    }
+
+    public void StartIndigestion()
+    {
+        GameManager.instance.StartIndegestionUI(m_IndigestionTime);
+        m_StarvingPoint = m_MaxStarvingPoint;
+        m_IsIndigestion = true;
+
+        t_IndegestionTimer.ResetPlay();
+        GetComponent<Renderer>().material.color = Color.green;
+
+        a_BossAnimator.SetBool("Indigestion", true);
     }
 
     public void StopIndegestion()
     {
         m_IsIndigestion = false;
         GetComponent<Renderer>().material.color = Color.blue;
+        a_BossAnimator.SetBool("Indigestion", false);
     }
 
     private void OnCollisionEnter(Collision collision)

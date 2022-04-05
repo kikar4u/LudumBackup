@@ -64,8 +64,9 @@ MonoBehaviour:
   m_ReduceStarvingPoint: 15
   m_IsIndigestion: 0
   StarvingText: {fileID: 5898302799591542492}
-  m_StravingTime: 3
-  m_IndigestionTime: 5
+  a_BossAnimator: {fileID: 8947603240105466653}
+  m_StravingTime: 5
+  m_IndigestionTime: 8
   animatorController: {fileID: 8947603240105466653}
   gourmetSound:
     Guid:
@@ -118,7 +119,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5898302799591542494}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
