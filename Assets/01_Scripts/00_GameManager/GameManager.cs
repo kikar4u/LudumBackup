@@ -2,11 +2,12 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
-
+    public bool gameOver = false;
     GameStatus status = GameStatus.RUNNING;
 
     private int gameScore;
@@ -31,7 +32,12 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(gameOver && Input.GetKeyDown(KeyCode.Space))
+        {
+            SceneManager.LoadScene("01_Placeholder");
+            Time.timeScale = 1.0f;
+            gameOver = false;
+        }
     }
 
     public void UpdateScore(int increment)
@@ -53,7 +59,7 @@ public class GameManager : MonoBehaviour
     {
         Time.timeScale = 0f;
         CanvasManager.instance.transform.GetChild(CanvasManager.instance.transform.childCount - 1).gameObject.SetActive(true);
-
+        gameOver = true;
         Debug.Log("GameOver");
     }
 }
