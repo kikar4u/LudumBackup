@@ -5137,7 +5137,7 @@ MonoBehaviour:
   m_StreamingVersion: 20170927
   m_Priority: 10
   m_StandbyUpdate: 2
-  m_LookAt: {fileID: 2127042620}
+  m_LookAt: {fileID: 418093595}
   m_Follow: {fileID: 0}
   m_Lens:
     FieldOfView: 45.9
@@ -5161,7 +5161,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 193367397}
-  m_LocalRotation: {x: 0.00031782239, y: 0.9801491, z: -0.19825545, w: 0.0015712722}
+  m_LocalRotation: {x: 0.0002818774, y: 0.98445994, z: -0.17560203, w: 0.0015802609}
   m_LocalPosition: {x: -0.21, y: 12.41, z: 24.862}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -5416,7 +5416,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 312140234}
-  m_LocalRotation: {x: 0.00031782239, y: 0.9801491, z: -0.19825545, w: 0.0015712722}
+  m_LocalRotation: {x: 0.0002818774, y: 0.98445994, z: -0.17560203, w: 0.0015802609}
   m_LocalPosition: {x: -0.21, y: 12.41, z: 24.862}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -5489,6 +5489,11 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!4 &418093595 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 625302729726602238, guid: 365a073cd6ddd8945a99aa4cc0020d90, type: 3}
+  m_PrefabInstance: {fileID: 56643123}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &440014848
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6394,11 +6399,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1995195148}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &2127042620 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8498194441577981373, guid: 365a073cd6ddd8945a99aa4cc0020d90, type: 3}
-  m_PrefabInstance: {fileID: 56643123}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1328791156027356756
 Transform:
   m_ObjectHideFlags: 0

@@ -67,6 +67,7 @@ public class CanvasManager : MonoBehaviour
         m_PausePanel.SetActive(true);
         m_GamePanel.SetActive(false);
     }
+
     public void HidePausePanel()
     {
         GameManager.instance.Status = GameStatus.RUNNING;
