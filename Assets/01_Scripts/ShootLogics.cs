@@ -89,6 +89,8 @@ namespace Polycrime
                     Debug.DrawRay(gameObject.transform.position, transform.TransformDirection(Vector3.forward) * 10000f, Color.red, 1000f);
                     GetComponent<PropulsionPad>().HandleTrigger(food.gameObject, food.gameObject.GetComponent<SphereCollider>().bounds);
                     Debug.Log("touchey");
+                    var emission = food.smokeTrail.emission;
+                    emission.enabled = true;
                     GourmetBehaviours.instance.a_BossAnimator.SetTrigger("Impatient");
                 }
 

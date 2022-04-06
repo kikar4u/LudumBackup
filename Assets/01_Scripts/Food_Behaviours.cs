@@ -27,7 +27,7 @@ public class Food_Behaviours : MonoBehaviour
     [Header("Sprite Indicator")]
     public SpriteRenderer m_CookIndicator;
     public List<Color> m_CookColor;
-
+    public ParticleSystem smokeTrail;
     public Status foodStatus;
     public FMODUnity.EventReference foodCookSound;
     FMOD.Studio.EventInstance foodCookEvent;
@@ -43,7 +43,9 @@ public class Food_Behaviours : MonoBehaviour
         Physics.IgnoreLayerCollision(9, 9);
         foodCookEvent = FMODUnity.RuntimeManager.CreateInstance(foodCookSound);
         FMODUnity.RuntimeManager.AttachInstanceToGameObject(foodCookEvent, transform);
-        
+        var emission = smokeTrail.emission;
+        emission.enabled = false;
+
     }
 
     // Update is called once per frame
@@ -81,6 +83,7 @@ public class Food_Behaviours : MonoBehaviour
         Vector3 directionPos = VectorsMethods.GetDirectionFromAtoB(transform.position, pos).normalized;
         //HandleTrigger();
         m_rb.AddForce(directionPos * speed, ForceMode.Impulse);
+
     }
 
     public void MoveToTheGourmet(Vector3 pos)
