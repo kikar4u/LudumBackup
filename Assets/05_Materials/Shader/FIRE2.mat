@@ -91,7 +91,7 @@ Material:
     m_Floats:
     - _AlphaClip: 0
     - _Blend: 0
-    - _BlendSharpness: -0.61
+    - _BlendSharpness: -1.2
     - _BumpScale: 1
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
@@ -99,19 +99,19 @@ Material:
     - _Cutoff: 0.5
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
-    - _DistortionScale: 1.42
+    - _DistortionScale: 1.21
     - _DstBlend: 0
     - _EnvironmentReflections: 1
-    - _FireBottomOffset: 1.57
+    - _FireBottomOffset: 1.64
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
-    - _Intensity: 2.54
+    - _Intensity: 8.4
     - _Metallic: 0
     - _OcclusionStrength: 1
     - _OpacityGradient: -0.43
-    - _OpacityGradientForce: -0.04
-    - _OpacityGradientLimit: 0.2
+    - _OpacityGradientForce: 0.03
+    - _OpacityGradientLimit: 0.22
     - _Parallax: 0.005
     - _QueueControl: 0
     - _QueueOffset: 0
@@ -122,7 +122,7 @@ Material:
     - _SrcBlend: 1
     - _Surface: 0
     - _WorkflowMode: 1
-    - _YStretch: 1.11
+    - _YStretch: 1.14
     - _ZWrite: 1
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
