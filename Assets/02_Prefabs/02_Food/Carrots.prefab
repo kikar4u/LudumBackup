@@ -7,6 +7,50 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 318869752040952468, guid: 0bd83ddb654a9ce4ea5fb8bbc06d458e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.192
+      objectReference: {fileID: 0}
+    - target: {fileID: 318869752040952468, guid: 0bd83ddb654a9ce4ea5fb8bbc06d458e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.157
+      objectReference: {fileID: 0}
+    - target: {fileID: 318869752040952468, guid: 0bd83ddb654a9ce4ea5fb8bbc06d458e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.057
+      objectReference: {fileID: 0}
+    - target: {fileID: 318869752040952468, guid: 0bd83ddb654a9ce4ea5fb8bbc06d458e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.28580564
+      objectReference: {fileID: 0}
+    - target: {fileID: 318869752040952468, guid: 0bd83ddb654a9ce4ea5fb8bbc06d458e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.8483826
+      objectReference: {fileID: 0}
+    - target: {fileID: 318869752040952468, guid: 0bd83ddb654a9ce4ea5fb8bbc06d458e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.2835935
+      objectReference: {fileID: 0}
+    - target: {fileID: 318869752040952468, guid: 0bd83ddb654a9ce4ea5fb8bbc06d458e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.34371048
+      objectReference: {fileID: 0}
+    - target: {fileID: 318869752040952468, guid: 0bd83ddb654a9ce4ea5fb8bbc06d458e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 16.858
+      objectReference: {fileID: 0}
+    - target: {fileID: 318869752040952468, guid: 0bd83ddb654a9ce4ea5fb8bbc06d458e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 488.852
+      objectReference: {fileID: 0}
+    - target: {fileID: 318869752040952468, guid: 0bd83ddb654a9ce4ea5fb8bbc06d458e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 134.92
+      objectReference: {fileID: 0}
+    - target: {fileID: 4853330451332477876, guid: 0bd83ddb654a9ce4ea5fb8bbc06d458e, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 460397052516329737, guid: 100072c383876674e8df32f4be1ee833, type: 3}
     - target: {fileID: 8769791072278860964, guid: 0bd83ddb654a9ce4ea5fb8bbc06d458e, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
