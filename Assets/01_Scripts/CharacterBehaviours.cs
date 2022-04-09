@@ -16,7 +16,7 @@ public class CharacterBehaviours : MonoBehaviour,IDamageable<float>,IKillable
     [Space]
     public CharacterController controller;
     public CharacterFeedbacks feedback;
-
+    public bool hasObject = false;
     
 
     private void Start()
