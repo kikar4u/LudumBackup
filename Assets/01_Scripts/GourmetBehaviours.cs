@@ -25,10 +25,14 @@ public class GourmetBehaviours : MonoBehaviour
     private Timer t_StravingTimer;
     public float m_IndigestionTime;
     private Timer t_IndegestionTimer;
+
     [Header("Animation Controller")]
     public Animator animatorController;
     public FMODUnity.EventReference gourmetSound;
     FMOD.Studio.EventInstance gourmetEventIDLE;
+
+    public FMODUnity.EventReference gourmetEatSound;
+    FMOD.Studio.EventInstance gourmetEatEvent;
 
     void Awake()
     {
@@ -49,6 +53,9 @@ public class GourmetBehaviours : MonoBehaviour
 
         gourmetEventIDLE = FMODUnity.RuntimeManager.CreateInstance(gourmetSound);
         FMODUnity.RuntimeManager.AttachInstanceToGameObject(gourmetEventIDLE, transform);
+
+        gourmetEatEvent = FMODUnity.RuntimeManager.CreateInstance(gourmetEatSound);
+        FMODUnity.RuntimeManager.AttachInstanceToGameObject(gourmetEatEvent, transform);
 
         gourmetEventIDLE.start();
     }
@@ -73,7 +80,7 @@ public class GourmetBehaviours : MonoBehaviour
         {
             StartIndigestion();
         }
-
+        gourmetEatEvent.start();
         t_StravingTimer.ResetPlay();
     }
 
