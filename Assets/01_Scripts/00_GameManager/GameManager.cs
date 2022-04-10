@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
     public bool gameOver = false;
     GameStatus status = GameStatus.RUNNING;
+    public bool godMod = false;
 
     private int gameScore;
 
@@ -62,10 +63,14 @@ public class GameManager : MonoBehaviour
     }
     public void GameOver()
     {
-        Time.timeScale = 0f;
-        CanvasManager.instance.transform.GetChild(CanvasManager.instance.transform.childCount - 1).gameObject.SetActive(true);
-        gameOver = true;
-        Debug.Log("GameOver");
+        if (!godMod)
+        {
+            Time.timeScale = 0f;
+            CanvasManager.instance.transform.GetChild(CanvasManager.instance.transform.childCount - 1).gameObject.SetActive(true);
+            gameOver = true;
+            Debug.Log("GameOver");
+        }
+
     }
 
     public void PauseGame()
