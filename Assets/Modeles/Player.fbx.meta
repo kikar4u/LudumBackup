@@ -1,11 +1,26 @@
 fileFormatVersion: 2
-guid: baf7f8c36b607b94395e88d6ba684f26
+guid: 6410325e4e5296245ae2d79e0201289d
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable:
   - first:
       74: 921470964183757664
     second: Ingredients_Idle
+  - first:
+      74: -6768895465508000293
+    second: Player_Idle
+  - first:
+      74: 6599214315619726264
+    second: Player_Run
+  - first:
+      74: 3738493364783726980
+    second: Player_Run_Grab
+  - first:
+      74: 7247641799976438155
+    second: Player_Throw
+  - first:
+      74: -341615994888566740
+    second: Player_Death
   externalObjects: {}
   materials:
     materialImportMode: 2
