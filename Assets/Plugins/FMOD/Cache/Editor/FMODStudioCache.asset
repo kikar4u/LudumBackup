@@ -242,7 +242,7 @@ MonoBehaviour:
   Path: C:/LudumBackup/FMOD_BUILD/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637846163324214551
+  lastModified: 637846163512281900
   FileSizes:
   - Name: 
     Value: 1692
@@ -389,7 +389,7 @@ MonoBehaviour:
   - {fileID: 5376184928411389351}
   StringsBanks:
   - {fileID: -2985959123273665156}
-  cacheTime: 637846163324214551
+  cacheTime: 637846163512281900
   cacheVersion: 10
 --- !u!114 &56813639191006927
 MonoBehaviour:
@@ -802,7 +802,7 @@ MonoBehaviour:
   Path: C:/LudumBackup/FMOD_BUILD/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637846163324194550
+  lastModified: 637846163512251873
   FileSizes:
   - Name: 
     Value: 4023200
