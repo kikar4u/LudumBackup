@@ -25,19 +25,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 820471273336062000, guid: 0cfc3b51af04074449a9e68e47db0cbe, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 820471273336062000, guid: 0cfc3b51af04074449a9e68e47db0cbe, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 1
+      value: 0.7071541
       objectReference: {fileID: 0}
     - target: {fileID: 820471273336062000, guid: 0cfc3b51af04074449a9e68e47db0cbe, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: 0.70705956
       objectReference: {fileID: 0}
     - target: {fileID: 820471273336062000, guid: 0cfc3b51af04074449a9e68e47db0cbe, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 820471273336062000, guid: 0cfc3b51af04074449a9e68e47db0cbe, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -101,7 +101,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8555346821571774077, guid: 0cfc3b51af04074449a9e68e47db0cbe, type: 3}
       propertyPath: m_Name
-      value: Food_2 3
+      value: poireau
       objectReference: {fileID: 0}
     - target: {fileID: 8555346821571774078, guid: 0cfc3b51af04074449a9e68e47db0cbe, type: 3}
       propertyPath: param

@@ -17,35 +17,35 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 820471273336062000, guid: 0cfc3b51af04074449a9e68e47db0cbe, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.125
+      value: -0.195
       objectReference: {fileID: 0}
     - target: {fileID: 820471273336062000, guid: 0cfc3b51af04074449a9e68e47db0cbe, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.03002037
+      value: 0.0057722637
       objectReference: {fileID: 0}
     - target: {fileID: 820471273336062000, guid: 0cfc3b51af04074449a9e68e47db0cbe, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.010670605
+      value: 0.03133314
       objectReference: {fileID: 0}
     - target: {fileID: 820471273336062000, guid: 0cfc3b51af04074449a9e68e47db0cbe, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.98363173
+      value: -0.6454822
       objectReference: {fileID: 0}
     - target: {fileID: 820471273336062000, guid: 0cfc3b51af04074449a9e68e47db0cbe, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.17735183
+      value: -0.7631106
       objectReference: {fileID: 0}
     - target: {fileID: 820471273336062000, guid: 0cfc3b51af04074449a9e68e47db0cbe, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 20.459
+      value: -100.007
       objectReference: {fileID: 0}
     - target: {fileID: 820471273336062000, guid: 0cfc3b51af04074449a9e68e47db0cbe, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 543.382
+      value: 521.453
       objectReference: {fileID: 0}
     - target: {fileID: 820471273336062000, guid: 0cfc3b51af04074449a9e68e47db0cbe, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -0.633
+      value: 16.468002
       objectReference: {fileID: 0}
     - target: {fileID: 5500093938823684368, guid: 0cfc3b51af04074449a9e68e47db0cbe, type: 3}
       propertyPath: m_Mesh
@@ -101,7 +101,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8555346821571774077, guid: 0cfc3b51af04074449a9e68e47db0cbe, type: 3}
       propertyPath: m_Name
-      value: Food_2 2
+      value: Piment
       objectReference: {fileID: 0}
     - target: {fileID: 8555346821571774078, guid: 0cfc3b51af04074449a9e68e47db0cbe, type: 3}
       propertyPath: param
