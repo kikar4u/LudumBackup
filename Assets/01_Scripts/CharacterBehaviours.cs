@@ -17,7 +17,8 @@ public class CharacterBehaviours : MonoBehaviour,IDamageable<float>,IKillable
     public CharacterController controller;
     public CharacterFeedbacks feedback;
     public bool hasObject = false;
-    
+
+    public Animator a_PlayerAnimator;
 
     private void Start()
     {
@@ -35,11 +36,12 @@ public class CharacterBehaviours : MonoBehaviour,IDamageable<float>,IKillable
             t_BurnCookTimer.Reset();
             feedback.StopBurnAnim();
 
-            //StartCoroutine(feedback.PlayFootStepSound());
+            a_PlayerAnimator.SetBool("Run", true);
 
             return;
         }
-            
+
+        a_PlayerAnimator.SetBool("Run", false);
 
         if (t_BurnCookTimer.IsStarted())
             return;
