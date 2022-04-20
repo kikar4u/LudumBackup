@@ -242,7 +242,7 @@ MonoBehaviour:
   Path: C:/LudumBackup/FMOD_BUILD/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637860620190111644
+  lastModified: 637860651581866161
   FileSizes:
   - Name: 
     Value: 2030
@@ -417,7 +417,7 @@ MonoBehaviour:
   - {fileID: 5376184928411389351}
   StringsBanks:
   - {fileID: -2985959123273665156}
-  cacheTime: 637860620190111644
+  cacheTime: 637860651581866161
   cacheVersion: 10
 --- !u!114 &56813639191006927
 MonoBehaviour:
@@ -566,8 +566,8 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 1
   Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
+  MinDistance: 0
+  MaxDistance: 30
   Length: 500
 --- !u!114 &2469645098016778057
 MonoBehaviour:
@@ -902,10 +902,10 @@ MonoBehaviour:
   Path: C:/LudumBackup/FMOD_BUILD/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637860620190091472
+  lastModified: 637860651581846152
   FileSizes:
   - Name: 
-    Value: 5838112
+    Value: 5838208
   Exists: 1
 --- !u!114 &5941771082239723684
 MonoBehaviour:
