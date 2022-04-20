@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using FMODUnity;
 
 public class GameManager : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class GameManager : MonoBehaviour
     public bool godMod = false;
 
     private int gameScore;
+
+    
 
     public GameStatus Status { get => status; set => status = value; }
     public int GameScore { get => gameScore; set => gameScore = value; }
@@ -77,12 +80,14 @@ public class GameManager : MonoBehaviour
     {
         if(status == GameStatus.RUNNING)
         {
+            FMODUnity.RuntimeManager.StudioSystem.setParameterByName("Pause", 1);
             status = GameStatus.PAUSED;
             Time.timeScale = 0;
             CanvasManager.instance.ShowPausePanel();
         }
         else
         {
+            FMODUnity.RuntimeManager.StudioSystem.setParameterByName("Pause", 0);
             CanvasManager.instance.HidePausePanel();
         }
         
