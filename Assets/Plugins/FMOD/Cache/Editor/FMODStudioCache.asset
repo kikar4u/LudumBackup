@@ -242,10 +242,10 @@ MonoBehaviour:
   Path: C:/LudumBackup/FMOD_BUILD/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637846163512281900
+  lastModified: 637860620190111644
   FileSizes:
   - Name: 
-    Value: 1692
+    Value: 2030
   Exists: 1
 --- !u!114 &-2298463884883392123
 MonoBehaviour:
@@ -321,6 +321,30 @@ MonoBehaviour:
   - Name: 
     Value: 1424
   Exists: 1
+--- !u!114 &-814887927783729130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MUSIC/PAUSE
+  m_EditorClassIdentifier: 
+  Name: PAUSE
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 785779831
+    data2: 403856247
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
 --- !u!114 &-252751969973410074
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -344,10 +368,12 @@ MonoBehaviour:
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
-  Parameters: []
+  Parameters:
+  - {fileID: 5071350308467945074}
+  - {fileID: -814887927783729130}
   MinDistance: 1
   MaxDistance: 20
-  Length: 54000
+  Length: 18000
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -384,12 +410,14 @@ MonoBehaviour:
   - {fileID: -1901496902627695543}
   - {fileID: -252751969973410074}
   - {fileID: -3167634913479057867}
-  EditorParameters: []
+  EditorParameters:
+  - {fileID: 1672204520481597128}
+  - {fileID: 4155935070018282424}
   MasterBanks:
   - {fileID: 5376184928411389351}
   StringsBanks:
   - {fileID: -2985959123273665156}
-  cacheTime: 637846163512281900
+  cacheTime: 637860620190111644
   cacheVersion: 10
 --- !u!114 &56813639191006927
 MonoBehaviour:
@@ -463,6 +491,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1500
+--- !u!114 &1672204520481597128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/TIME
+  m_EditorClassIdentifier: 
+  Name: TIME
+  StudioPath: parameter:/TIME
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 452821765
+    data2: 3992276849
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
 --- !u!114 &1763491000119263426
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -489,7 +541,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 57000
+  Length: 56000
 --- !u!114 &2062158447095666547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -652,6 +704,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 5500
+--- !u!114 &4155935070018282424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/PAUSE
+  m_EditorClassIdentifier: 
+  Name: PAUSE
+  StudioPath: parameter:/PAUSE
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 785779831
+    data2: 403856247
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
 --- !u!114 &4234727791239393874
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -733,6 +809,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3000
+--- !u!114 &5071350308467945074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MUSIC/TIME
+  m_EditorClassIdentifier: 
+  Name: TIME
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 452821765
+    data2: 3992276849
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
 --- !u!114 &5168842567262123788
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -802,10 +902,10 @@ MonoBehaviour:
   Path: C:/LudumBackup/FMOD_BUILD/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637846163512251873
+  lastModified: 637860620190091472
   FileSizes:
   - Name: 
-    Value: 4023200
+    Value: 5838112
   Exists: 1
 --- !u!114 &5941771082239723684
 MonoBehaviour:
